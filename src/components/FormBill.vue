@@ -66,38 +66,41 @@
 
 <template>
   <v-container
-    class="custom-container px-16 py-8 border-sm border-opacity-100 border-primary rounded-xl my-auto align-center"
+    class="custom-container px-md-16 py-8 py-md-16 border-sm border-opacity-100 border-primary rounded-xl my-auto align-center"
   >
-    <v-row align="baseline" class="h-100" justify="center">
-      <v-col
-        cols="12"
-        class="text-center d-flex justify-space-between align-center"
-      >
-        <v-icon
-          @click="backPage"
-          color="primary"
-          icon="mdi-arrow-left"
-          size="x-large"
-        ></v-icon>
-
-        <div class="d-flex align-baseline h-25">
-          <div class="text-h5 text-sm-h4 text-md-h4 text-lg-h3 text-primary">
-            Gestor Financeiro
-          </div>
-          <v-icon color="primary" icon="mdi-cash" size="x-large"></v-icon>
-        </div>
-      </v-col>
+    <v-row class="h-100" justify="center">
       <v-col cols="12" md="6">
-        <div class="text-h6 text-md-h5 text-lg-h5 mb-3">
+        <div class="d-flex align-center justify-space-between">
+          <v-icon
+            @click="backPage"
+            color="primary"
+            icon="mdi-arrow-left"
+            size="x-large"
+          ></v-icon>
+
+          <div class="d-flex align-center">
+            <div class="text-h5 text-sm-h4 text-md-h4 text-lg-h3 text-primary">
+              Gestor Financeiro
+            </div>
+            <v-img
+              :width="40"
+              aspect-ratio="16/9"
+              cover
+              src="https://icons.iconarchive.com/icons/graphicloads/polygon/256/dollar-icon.png"
+            ></v-img>
+          </div>
+        </div>
+
+        <div class="text-h6 text-md-h5 text-lg-h5 mt-8 text-center">
           Vamos adicionar sua conta a prazo!
         </div>
-        <p>
+        <p class="mt-5">
           Para começar a gerenciar suas compras a prazo, preencha o formulário
           com as informações solicitadas. Após isso, registre a conta e
           confira-a na sua lista de contas.
         </p>
       </v-col>
-      <v-col cols="12" md="6">
+      <v-col cols="12" md="6" class="my-auto">
         <div class="text-h6 text-md-h5 text-lg-h5">Formulário</div>
         <v-form class="mt-4 h-auto">
           <v-text-field

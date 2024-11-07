@@ -22,11 +22,7 @@
 
 <template>
   <v-container class="d-flex align-center h-100">
-    <FormBill
-      @submitForm="handleSubmit"
-      @backPage="routeToList"
-      class="h-100 h-sm-75"
-    />
+    <FormBill @submitForm="handleSubmit" @backPage="routeToList" />
   </v-container>
 </template>
 

@@ -1,7 +1,3 @@
-export function toDate(date) {
-  return new Date(date);
-}
-
 export function toFloat(string) {
   return parseFloat(string);
 }

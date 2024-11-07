@@ -1,9 +1,4 @@
-import {
-  toDate,
-  toFloat,
-  toFormatedDate,
-  toInteger,
-} from "./convertionService";
+import { toFloat, toFormatedDate, toInteger } from "./convertionService";
 import { getBills, saveBill } from "./localStorageService";
 
 function getBillId() {
@@ -18,6 +13,7 @@ function getParcelValue(value, parcels) {
 export function getDateParcel(initialDate, parcel) {
   let parcelDate = new Date(initialDate);
   parcelDate.setMonth(parcelDate.getMonth() + (parcel - 1));
+  parcelDate.setDate(parcelDate.getDate() + 1);
   return toFormatedDate(parcelDate);
 }
 
@@ -28,7 +24,7 @@ export function createBill(name, value, parcels, dueDate) {
     value: toFloat(value),
     parcels: toInteger(parcels),
     parcelsValue: getParcelValue(value, parcels),
-    dueDate: toDate(dueDate),
+    dueDate: dueDate,
   };
   saveBill(bill);
 }

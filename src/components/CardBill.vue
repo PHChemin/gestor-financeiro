@@ -20,8 +20,8 @@
   <v-container
     class="custom-container border-sm border-opacity-100 border-primary rounded-xl"
   >
-    <v-row>
-      <v-col cols="3" class="text-body-1 text-center">{{ bill.name }}</v-col>
+    <v-row align="center">
+      <v-col cols="3" class="text-body-1">{{ bill.name }}</v-col>
       <v-col cols="3" class="text-body-1">{{ bill.value }}</v-col>
       <v-col cols="3" class="text-body-1">{{ bill.parcels }}</v-col>
       <v-col cols="3" class="text-body-1"
