@@ -16,11 +16,11 @@ Além disso, dividi algumas partes da interface em componentes Vue para melhorar
 
 - **Vue.js**: Framework JavaScript progressivo para a construção de interfaces de usuário e SPAs.
 
-  ![Vue.js Logo](https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js)
+  ![Vue.js Logo](https://vuejs.org/images/logo.png)
 
 - **Vuetify**: Framework de componentes baseado no Material Design que facilita a criação de interfaces modernas e responsivas.
 
-  ![Vuetify Logo](https://cdn.jsdelivr.net/npm/vuetify@2.5.10/dist/vuetify.min.js)
+  ![Vuetify Logo](https://cdn.vuetifyjs.com/docs/images/logos/vuetify-logo-dark.png)
 
 ## Como usar
 
