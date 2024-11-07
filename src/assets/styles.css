@@ -1,0 +1,9 @@
+:root {
+   --primary-color: #00FF65;  /* Azul */
+   --secondary-color: #858585; /* Cinza */
+   --accent-color: #00b837;    /* Azul claro */
+   --error-color: #FF5252;     /* Vermelho */
+   --info-color: #2196F3;      /* Azul claro */
+   --success-color: #00ff08;   /* Verde */
+   --warning-color: #FFC107;    /* Amarelo */
+ }
