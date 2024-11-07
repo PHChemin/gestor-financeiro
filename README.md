@@ -16,11 +16,11 @@ Além disso, dividi algumas partes da interface em componentes Vue para melhorar
 
 - **Vue.js**: Framework JavaScript progressivo para a construção de interfaces de usuário e SPAs.
 
-  ![Vue.js Logo](https://vuejs.org/images/logo.png =100x100)
+  <img src="https://vuejs.org/images/logo.png" width="100" height="100" />
 
 - **Vuetify**: Framework de componentes baseado no Material Design que facilita a criação de interfaces modernas e responsivas.
 
-  ![Vuetify Logo](https://cdn.vuetifyjs.com/docs/images/logos/vuetify-logo-dark.svg =100x100)
+  <img src="https://cdn.vuetifyjs.com/docs/images/logos/vuetify-logo-dark.svg" width="100" height="100" />
 
 ## Como usar
 
@@ -50,7 +50,7 @@ npm run serve
 
 ### Acesse a aplicação
 
-Abra o navegador e entre no seguinte endereço
+Abra o navegador e entre no endereço de hospedagem
 
 ```sh
 http://<seu-ip>:3000
