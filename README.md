@@ -1,29 +1,57 @@
 # gestor-financeiro
 
-This template should help get you started developing with Vue 3 in Vite.
+O Gestor Financeiro é uma aplicação para gerenciar suas contas. Com ele, você pode cadastrar informações como o nome da conta, valor total, quantidade de parcelas e a data de vencimento da primeira parcela. O sistema armazena todas as contas registradas e exibe detalhes importantes, como o valor de cada parcela e o vencimento das parcelas subsequentes.
 
-## Recommended IDE Setup
+## Processo de Desenvolvimento
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+No Gestor Financeiro, utilizei diversos recursos do Vue.js para garantir uma aplicação funcional e bem estruturada. No cadastro das contas, implementei a validação dos formulários, desabilitando o botão de cadastro enquanto os inputs não estavam corretos. A manipulação e o armazenamento das contas foram feitos utilizando o localStorage, com um service dedicado a essa função para separar responsabilidades na aplicação. Além disso, criei um service específico para lidar com a criação e manipulação das contas, facilitando a manutenção do código e a reutilização de lógicas.
 
-## Customize configuration
+Para o tratamento dos dados, desenvolvi um service responsável pela formatação e conversão de valores, garantindo flexibilidade para futuras alterações no formato dos dados. Na lista de contas, apliquei conceitos como v-if para exibir a mensagem de "sem contas" quando necessário e v-for para realizar a renderização dinâmica das contas cadastradas.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Quando um usuário deseja visualizar os detalhes de uma conta, utilizamos o Vue Router para navegar para uma nova página, passando o id da conta como parâmetro, o que permite recuperar as informações específicas daquela conta. Como a aplicação é uma SPA (Single Page Application), as rotas são usadas para gerenciar a navegação entre as diferentes páginas sem recarregar a página inteira.
 
-## Project Setup
+Além disso, dividi algumas partes da interface em componentes Vue para melhorar a organização e reutilização do código. No aspecto visual, utilizei as tags e estilos do Vuetify para garantir uma interface responsiva.
+
+## Frameworks Usados
+
+- **Vue.js**: Framework JavaScript progressivo para a construção de interfaces de usuário e SPAs.
+
+  ![Vue.js Logo](https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js)
+
+- **Vuetify**: Framework de componentes baseado no Material Design que facilita a criação de interfaces modernas e responsivas.
+
+  ![Vuetify Logo](https://cdn.jsdelivr.net/npm/vuetify@2.5.10/dist/vuetify.min.js)
+
+## Como usar
+
+### Clone o repositório em seu computador
+
+```sh
+git clone https://github.com/PHChemin/gestor-financeiro.git
+```
+
+### Instale as dependências
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
+### Faça a build do projeto
 
 ```sh
 npm run build
+```
+
+### Hospede a aplicação localmente
+
+```sh
+npm run serve
+```
+
+### Acesse a aplicação
+
+Abra o navegador e entre no seguinte endereço
+
+```sh
+http://<seu-ip>:3000
 ```

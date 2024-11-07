@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve": "http-server ./dist -p 3000"
   },
   "dependencies": {
+    "http-server": "^14.1.1",
     "vite-plugin-vuetify": "^2.0.4",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5",
