@@ -1,10 +1,14 @@
 <script setup>
   import { getBills } from "@/services/localStorageService";
-  import { ref } from "vue";
+  import { onMounted, ref } from "vue";
   import CardBill from "@/components/CardBill.vue";
   import { toBRL } from "@/services/convertionService";
   import { useRouter } from "vue-router";
   import NavApp from "@/components/NavApp.vue";
+
+  onMounted(() => {
+    document.title = "Contas";
+  });
 
   const router = useRouter();
   const bills = ref(getBills());

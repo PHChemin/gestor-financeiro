@@ -4,8 +4,12 @@
   import { getDateParcel } from "@/services/billService";
   import { toBRL } from "@/services/convertionService";
   import { getBillById } from "@/services/localStorageService";
-  import { ref } from "vue";
+  import { onMounted, ref } from "vue";
   import { useRoute } from "vue-router";
+
+  onMounted(() => {
+    document.title = "Detalhes";
+  });
 
   const route = useRoute();
   const billId = route.params.id;
